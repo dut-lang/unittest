@@ -1,0 +1,30 @@
+class UnitTest {
+	constructor()
+	{
+		::print("Start Dut UnitTest\n");
+	}
+
+	function assertEquals(first, second) {
+		if(first != second) {
+			// printf("%r != %r", first, second)
+			print(first + " != " + second + "\n")
+			return false
+		}
+		return true
+	}
+
+	function main() {
+		::print("Run::\n");
+	}
+}
+
+class TestClass extends UnitTest {
+	constructor()
+	{
+		base.constructor();
+		base.assertEquals(1, 2)
+	}
+}
+
+test <- TestClass()
+test.main()
