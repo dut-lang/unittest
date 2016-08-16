@@ -1,7 +1,5 @@
 language: cpp
 
-compiler: clang
-
-install: make CPP=$CXX
+install: make
 
 script: ./src/dut/dut unittest.dut
