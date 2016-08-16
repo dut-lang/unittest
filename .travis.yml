@@ -2,6 +2,9 @@ language: cpp
 
 compiler: clang
 
-script:
-  - make CC=$CC CPP=$CXX test
-  - ./src/dut/dut unittest.dut
+install:
+  - wget https://github.com/dut-lang/dut/archive/master.tar.gz
+  - tar -xzvf dut-master.tar.gz
+  - cd dut-master && make
+
+script: ./src/dut/dut unittest.dut
