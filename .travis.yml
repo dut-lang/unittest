@@ -5,5 +5,5 @@ compiler: clang
 script:
   - wget https://github.com/dut-lang/dut/archive/master.tar.gz
   - tar -xzvf master.tar.gz
-  - cd dut-master && make
+  - cd dut-master && make && cd ..
   - ./dut-master/src/dut/dut unittest.dut
