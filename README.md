@@ -9,13 +9,10 @@ The Dut unit testing framework is a Dut language version of JUnit, by Kent Beck 
     import unittest
 
 
-	class TestClass extends unittest.UnitTest {
-		constructor() {
-			::print("Start TestClass run tests\n");
-		}
+	class TestClass extends UnitTest {
 
 		function test_oneequalone() {
-			base.assertEquals(1, 1)
+			assert(1 == 1)
 		}
 	}
 
