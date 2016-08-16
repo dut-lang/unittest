@@ -9,7 +9,7 @@ class UnitTest {
 	function runTests() {
 		foreach (idx, item in getroottable()) {
 			if ((idx != "UnitTest") && (typeof(item) == "class")) {
-				local object = item.instance()
+				var object = item.instance()
 				if (object instanceof UnitTest) {
 					::print("=> " + idx + " - " + typeof(item) + "\n")
 					foreach (i, v in item) {
