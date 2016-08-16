@@ -7,4 +7,4 @@ install:
   - tar -xzvf dut-master.tar.gz
   - cd dut-master && make
 
-script: ./src/dut/dut unittest.dut
+script: ./dut-master/src/dut/dut unittest.dut
