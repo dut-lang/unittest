@@ -1,5 +1,5 @@
 language: cpp
 
-install: make
+install: make test
 
 script: ./src/dut/dut unittest.dut
