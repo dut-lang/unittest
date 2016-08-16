@@ -1,5 +1,7 @@
 language: cpp
 
-install: make test
+compiler: clang
 
-script: ./src/dut/dut unittest.dut
+script:
+  - make CC=$CC CPP=$CXX test
+  - ./src/dut/dut unittest.dut
